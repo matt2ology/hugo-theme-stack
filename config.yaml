@@ -29,7 +29,7 @@ params:
         avatar:
             enabled: true
             local: true
-            src: img/avatar.png
+            src: img/avatarProfile_1024x1024.png
 
     article:
         headingAnchor: false
