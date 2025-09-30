@@ -5,7 +5,11 @@ module:
 
 params:
     mainSections:
-        - post
+        - atomic
+        - blog
+        - journal
+        - literature
+        - references
     featuredImageField: image
     rssFullContent: true
     favicon:
