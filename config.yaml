@@ -24,8 +24,8 @@ params:
 
     sidebar:
         compact: false
-        emoji:
-        subtitle:
+        emoji: 📚
+        subtitle: This is where I keep highlights of the media I consume, and write my non-sequitur thoughts and pedantic opinions.
         avatar:
             enabled: true
             local: true
@@ -122,8 +122,19 @@ params:
             id:
 
     widgets:
-        homepage: []
-        page: []
+        homepage:
+            - type: search
+            - type: archives
+              params:
+                  limit: 5
+            - type: categories
+              params:
+                  limit: 10
+            - type: tag-cloud
+              params:
+                  limit: 10
+        page:
+            - type: toc
 
     opengraph:
         twitter:
@@ -151,3 +162,16 @@ params:
             enabled: true
         content:
             enabled: true
+
+### Custom menu
+### See https://stack.jimmycai.com/config/menu
+### To remove about, archive and search page menu item, remove `menu` field from their FrontMatter
+menu:
+    main: []
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/matt2ology
+          params:
+              icon: brand-github
