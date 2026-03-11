@@ -1,3 +1,30 @@
-<a class="link" href="{{ .Destination | safeURL }}" {{ with .Title}} title="{{ . }}"
-    {{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener"
-    {{ end }}>{{ .Text | safeHTML }}</a>
+{{ $dest := .Destination }}
+{{ $url := $dest }}
+{{ $fragment := "" }}
+
+{{/* Split anchor fragment if present */}}
+{{ if strings.Contains $dest "#" }}
+  {{ $parts := split $dest "#" }}
+  {{ $dest = index $parts 0 }}
+  {{ $fragment = printf "#%s" (index $parts 1) }}
+{{ end }}
+
+{{/* Resolve Markdown pages */}}
+{{ if strings.HasSuffix $dest ".md" }}
+  {{ with site.GetPage $dest }}
+    {{ $url = printf "%s%s" .RelPermalink $fragment }}
+  {{ else }}
+    {{ $url = printf "%s%s" $dest $fragment }}
+  {{ end }}
+{{ else }}
+  {{ $url = printf "%s%s" $dest $fragment }}
+{{ end }}
+
+{{ $external := strings.HasPrefix $url "http" }}
+
+<a class="link"
+   href="{{ $url | safeURL }}"
+   {{ with .Title }}title="{{ . }}"{{ end }}
+   {{ if $external }}target="_blank" rel="noopener"{{ end }}>
+   {{ .Text | safeHTML }}
+</a>
