@@ -21,7 +21,7 @@ SortBy         = "default"
     [sidebar.avatar]
     enabled = true
     local = true
-    avatar = "assets/img/avatarProfile_1024x1024.png"
+    avatar = "assets\img\avatarProfile_1024x1024.png"
 
 [article]
     headingAnchor = false
