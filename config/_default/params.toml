@@ -73,6 +73,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
         { type = "search" },
         { type = "archives", params = { limit = 5 } },
         { type = "categories", params = { limit = 10 } },
+        { type = "tag-cloud", params = { limit = 10 } },
     ]
 
 [opengraph.twitter]
