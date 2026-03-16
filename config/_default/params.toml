@@ -17,6 +17,7 @@ SortBy         = "default"
     compact = false
     emoji = "📚"
     subtitle = "This is where I keep highlights of the media I consume, and write my non-sequitur thoughts and pedantic opinions."
+    avatar = "assets/img/avatarProfile_1024x1024.png"
 
     [sidebar.avatar]
     enabled = true
