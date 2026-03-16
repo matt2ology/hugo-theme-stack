@@ -1,0 +1,20 @@
+name: Trigger Hugo Theme Update
+
+on:
+  workflow_dispatch: # manual trigger
+  push:
+    branches:
+      - main # or whichever branch should trigger
+
+jobs:
+  trigger-update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Hugo theme update site workflow
+        run: |
+          echo "Triggering Hugo theme update workflow in matt2ology.github.io..."
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.MATT2OLOGY_GITHUB_IO_PAT }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            https://api.github.com/repos/matt2ology/matt2ology.github.io/dispatches \
+            -d '{"event_type": "sync-from-theme", "client_payload": {"source_sha": "${{ github.sha }}"}}'
