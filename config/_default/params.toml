@@ -21,7 +21,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
     [sidebar.avatar]
         enabled = true
         local = true
-        avatar = "demo/assets/img/avatarProfile_1024x1024.png"
+        avatar = "img/avatarProfile_1024x1024.png"
 
 [article]
     headingAnchor = false
