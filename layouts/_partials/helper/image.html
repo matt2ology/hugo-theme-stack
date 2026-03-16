@@ -26,17 +26,10 @@
         {{/* Local image */}}
         {{ $resource = .Resources.Get (printf "%s" (.Image | safeURL)) }}
     {{ else }}
-        {{/* Remote image */}}
-        {{ with try (resources.GetRemote $url (dict "timeout" .Context.Site.Params.imageProcessing.external.timeout)) }}
-            {{ with .Err }}
-                {{ warnf "Failed to fetch remote resource %q: %s" $url . }}
-            {{ else with .Value }}
-                {{ $resource = . }}
-                {{ $local = false }}
-            {{ else }}
-                {{ warnf "Unable to get remote resource %q" $url }}
-            {{ end }}
-        {{ end }}   
+        {{/* Remote image: use URL directly, do not fetch */}}
+        {{ $local = false }}
+        {{ $resource = nil }}
+        {{ $permalink = .Image }}
     {{ end }}
 
     {{ if $resource }}
