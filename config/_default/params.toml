@@ -21,7 +21,6 @@ SortBy         = "default"
     [sidebar.avatar]
     enabled = true
     local = true
-    avatar = ""
 
 [article]
     headingAnchor = false
