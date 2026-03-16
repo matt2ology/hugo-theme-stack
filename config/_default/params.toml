@@ -31,7 +31,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
 
     [article.list]
         # Showing article tags in the list view (e.g. homepage, section pages)
-        showTags = false
+        showTags = true
 
     [article.license]
         enabled = false
