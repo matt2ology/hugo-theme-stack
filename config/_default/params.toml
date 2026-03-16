@@ -69,8 +69,9 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
         caution   = "🚨"
 
 [widgets]
-    homepage = []
-    page     = []
+    homepage = [
+        { type = "search" },
+    ]
 
 [opengraph.twitter]
     site = ""
