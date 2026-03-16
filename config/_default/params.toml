@@ -19,9 +19,9 @@ emoji = "📚"
 subtitle = "This is where I keep highlights of the media I consume, and write my non-sequitur thoughts and pedantic opinions."
 
     [sidebar.avatar]
-        avatar = "assets/img/avatarProfile_1024x1024.png"
         enabled = true
         local = true
+        avatar = "demo/assets/img/avatarProfile_1024x1024.png"
 
 [article]
     headingAnchor = false
