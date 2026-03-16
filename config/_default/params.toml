@@ -15,7 +15,13 @@ SortBy         = "default"
 
 [sidebar]
     compact = false
-    avatar  = ""
+    emoji = "📚"
+    subtitle = "This is where I keep highlights of the media I consume, and write my non-sequitur thoughts and pedantic opinions."
+
+    [sidebar.avatar]
+    enabled = true
+    local = true
+    avatar = "img/avatarProfile_1024x1024.png"
 
 [article]
     headingAnchor = false
