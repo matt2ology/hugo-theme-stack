@@ -9,7 +9,7 @@ params:
         - blog
         - journal
         - literature
-        - references
+        - highlights
     featuredImageField: image
     rssFullContent: true
     favicon:
