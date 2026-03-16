@@ -26,10 +26,8 @@
         {{/* Local image */}}
         {{ $resource = .Resources.Get (printf "%s" (.Image | safeURL)) }}
     {{ else }}
-        {{/* Remote image: use URL directly, do not fetch */}}
+        {{/* Remote image: do not fetch, just use URL */}}
         {{ $local = false }}
-        {{ $resource = nil }}
-        {{ $permalink = .Image }}
     {{ end }}
 
     {{ if $resource }}
