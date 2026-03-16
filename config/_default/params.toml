@@ -1,4 +1,4 @@
-mainSections   = [ "atomic", "blog", "journal", "literature", "highlights" ]
+mainSections   = [ "atomic", "blog", "journal", "literature", "highlights", "collections" ]
 rssFullContent = true
 # Accepted values: "default", "lastmod"
 # default = see https://gohugo.io/quick-reference/glossary/#default-sort-order
