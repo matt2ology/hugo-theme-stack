@@ -71,6 +71,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
 [widgets]
     homepage = [
         { type = "search" },
+        { type = "archives", params = { limit = 5 } },
     ]
 
 [opengraph.twitter]
