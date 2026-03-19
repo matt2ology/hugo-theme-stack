@@ -1,4 +1,5 @@
 mainSections   = [ "atomic", "blog", "literature", "highlights", "collections" ]
+ignoreFiles = ["^journal/.*\\.md$"]
 rssFullContent = true
 # Accepted values: "default", "lastmod"
 # default = see https://gohugo.io/quick-reference/glossary/#default-sort-order
