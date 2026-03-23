@@ -25,7 +25,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
         avatar = "img/avatarProfile_1024x1024.png"
 
 [article]
-    headingAnchor = false
+    headingAnchor = true
     math          = false
     toc           = true
     readingTime   = true
