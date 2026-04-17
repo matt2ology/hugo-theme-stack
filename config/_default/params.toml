@@ -5,7 +5,7 @@ mainSections   = [
     "courses",
     "highlights",
     "literature",
-    "puzzles",
+    "challenges-and-puzzles",
     ]
 refLinksErrorLevel = "warning"
 rssFullContent = true
