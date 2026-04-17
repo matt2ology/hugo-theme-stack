@@ -1,4 +1,12 @@
-mainSections   = [ "atomic", "blog", "literature", "highlights", "collections" ]
+mainSections   = [
+    "atomic",
+    "blog",
+    "collections",
+    "courses",
+    "highlights",
+    "literature",
+    "puzzles",
+    ]
 refLinksErrorLevel = "warning"
 rssFullContent = true
 # Accepted values: "default", "lastmod"
