@@ -121,6 +121,10 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
     enabled  = true
     provider = "disqus"
 
+    [comments.artalk]
+        serverUrl = ""
+        site      = ""
+
     [comments.disqusjs]
         shortname  = ""
         apiUrl     = ""
