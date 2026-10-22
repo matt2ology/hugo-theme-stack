@@ -1,11 +1,12 @@
 mainSections   = [
     "atomic",
     "blog",
+    "challenges-and-puzzles",
     "collections",
+    "cookbook",
     "courses",
     "highlights",
     "literature",
-    "challenges-and-puzzles",
     ]
 refLinksErrorLevel = "warning"
 rssFullContent = true
