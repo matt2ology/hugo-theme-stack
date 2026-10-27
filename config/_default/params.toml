@@ -79,6 +79,29 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
         important = "📌"
         warning   = "⚠️"
         caution   = "🚨"
+        # Alert icons to match Obsidian (https://obsidian.md/help/callouts)
+        abstract  = "📋"
+        attention = "⚠️"
+        bug       = "🪰"
+        check     = "✅"
+        cite      = "🗣️"
+        danger    = "⚡"
+        done      = "✅"
+        error     = "⚡"
+        fail      = "❌"
+        failure   = "❌"
+        faq       = "❓"
+        help      = "❓"
+        hint      = "🔥"
+        info      = "ℹ️"
+        missing   = "❌"
+        question  = "❓"
+        quote     = "🗣️"
+        success   = "✅"
+        summary   = "📋"
+        tldr      = "📋"
+        todo      = "✔️"
+
 
 [widgets]
     homepage = [
