@@ -7,6 +7,7 @@ mainSections = [
   "course-lecture",
   "literature",
   "marginalia",
+  "Readwise",
 ]
 
 refLinksErrorLevel = "warning"
