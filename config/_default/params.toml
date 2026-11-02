@@ -53,6 +53,8 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
     # Diagrams are only loaded when mermaid code blocks are present
     # Theme auto-switches based on site light/dark mode
     [article.mermaid]
+        # Mermaid version from CDN
+        version = "11"
         # Visual style: classic or handDrawn (sketch style)
         look                  = "handDrawn"
         # Theme for light mode: default, neutral, dark, forest, base, null
