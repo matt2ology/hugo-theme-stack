@@ -1,13 +1,13 @@
 mainSections = [
+  "analysis",
   "blog",
   "challenges-and-puzzles",
   "collections",
   "concepts",
   "cookbook",
-  "course-lecture",
-  "literature",
-  "marginalia",
+  "notes",
   "Readwise",
+  "synthesis",
 ]
 
 refLinksErrorLevel = "warning"
