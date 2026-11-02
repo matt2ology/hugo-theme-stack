@@ -54,7 +54,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
     # Theme auto-switches based on site light/dark mode
     [article.mermaid]
         # Visual style: classic or handDrawn (sketch style)
-        look                  = "classic"
+        look                  = "handDrawn"
         # Theme for light mode: default, neutral, dark, forest, base, null
         lightTheme            = "default"
         # Theme for dark mode: default, neutral, dark, forest, base, null
@@ -65,7 +65,7 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
         # darkThemeVariables = { primaryColor = "#00ff00" }
         # Security level: strict (default), loose, antiscript, sandbox
         # Set to "loose" to enable HTML labels like <br/>
-        securityLevel         = "strict"
+        securityLevel         = "loose"
         # Enable HTML labels in diagrams (requires securityLevel: loose)
         htmlLabels            = true
         # Make diagram backgrounds transparent (default: false)
