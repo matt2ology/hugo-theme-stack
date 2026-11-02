@@ -100,8 +100,9 @@ subtitle = "This is where I keep highlights of the media I consume, and write my
         question  = "❓"
         quote     = "🗣️"
         success   = "✅"
-        summary   = "📋"
-        tldr      = "📋"
+        summary   = "📌"
+        thought   = "💭"
+        tldr      = "⚡"
         todo      = "✔️"
 
 
