@@ -1,1 +1,72 @@
 /* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+/* Extended Obsidian-style Callout Theme Mappings */
+
+/* Success / Done / Check */
+.alert.success, .alert.done, .alert.check {
+    border-left-color: var(--alert-tip-color);
+    background-color: var(--alert-tip-background);
+    .alert-title { color: var(--alert-tip-color); }
+}
+
+/* Danger / Error */
+.alert.danger, .alert.error {
+    border-left-color: var(--alert-caution-color);
+    background-color: var(--alert-caution-background);
+    .alert-title { color: var(--alert-caution-color); }
+}
+
+/* Warning / Attention */
+.alert.attention {
+    border-left-color: var(--alert-warning-color);
+    background-color: var(--alert-warning-background);
+    .alert-title { color: var(--alert-warning-color); }
+}
+
+/* Info / Abstract / Summary */
+.alert.abstract, .alert.summary, .alert.info, .alert.tldr {
+    border-left-color: var(--alert-note-color);
+    background-color: var(--alert-note-background);
+    .alert-title { color: var(--alert-note-color); }
+}
+
+/* Bug / Failure / Fail / Missing */
+.alert.bug, .alert.fail, .alert.failure, .alert.missing {
+    border-left-color: #ff5555;
+    background-color: rgba(255, 85, 85, 0.08);
+    .alert-title { color: #ff5555; }
+}
+
+/* FAQ / Help / Question */
+.alert.faq, .alert.help, .alert.question {
+    border-left-color: #2ea043;
+    background-color: rgba(46, 160, 67, 0.08);
+    .alert-title { color: #2ea043; }
+}
+
+/* Quote / Cite */
+.alert.quote, .alert.cite {
+    border-left-color: #8b949e;
+    background-color: rgba(139, 148, 158, 0.08);
+    .alert-title { color: #8b949e; }
+}
+
+/* Hint / Tip */
+.alert.hint {
+    border-left-color: var(--alert-tip-color);
+    background-color: var(--alert-tip-background);
+    .alert-title { color: var(--alert-tip-color); }
+}
+
+/* Thought */
+.alert.thought {
+    border-left-color: #a371f7;
+    background-color: rgba(163, 113, 247, 0.08);
+    .alert-title { color: #a371f7; }
+}
+
+/* Todo */
+.alert.todo {
+    border-left-color: #388bfd;
+    background-color: rgba(56, 139, 253, 0.08);
+    .alert-title { color: #388bfd; }
+}
