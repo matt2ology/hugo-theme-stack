@@ -62,9 +62,16 @@ Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss
   }
 }
 
-.alert.alert-abstract,
-.alert.alert-summary,
 .alert.alert-tldr {
+  border-color: var(--alert-important-color);
+  background-color: var(--alert-important-background);
+  .alert-title {
+    color: var(--alert-important-color);
+  }
+}
+
+.alert.alert-abstract,
+.alert.alert-summary {
   border-color: var(--alert-tip-color);
   background-color: var(--alert-tip-background);
   .alert-title {
