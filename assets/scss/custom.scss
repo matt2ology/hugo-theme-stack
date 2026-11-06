@@ -11,8 +11,8 @@ Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss
   --alert-faq-color: #2ea043;
   --alert-faq-background: rgba(46, 160, 67, 0.08);
 
-  --alert-quote-color: #8b949e;
-  --alert-quote-background: rgba(139, 148, 158, 0.08);
+  --alert-cite-color: #8b949e;
+  --alert-cite-background: rgba(139, 148, 158, 0.08);
 
   --alert-thought-color: #a371f7;
   --alert-thought-background: rgba(163, 113, 247, 0.08);
@@ -53,15 +53,22 @@ Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss
   }
 }
 
-/* Info / Abstract / Summary / TLDR */
-.alert.alert-abstract,
-.alert.alert-summary,
-.alert.alert-info,
-.alert.alert-tldr {
+
+.alert.alert-info {
   border-color: var(--alert-note-color);
   background-color: var(--alert-note-background);
   .alert-title {
     color: var(--alert-note-color);
+  }
+}
+
+.alert.alert-abstract,
+.alert.alert-summary,
+.alert.alert-tldr {
+  border-color: var(--alert-tip-color);
+  background-color: var(--alert-tip-background);
+  .alert-title {
+    color: var(--alert-tip-color);
   }
 }
 
@@ -88,13 +95,20 @@ Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss
   }
 }
 
-/* Quote / Cite */
-.alert.alert-quote,
+
 .alert.alert-cite {
-  border-color: var(--alert-quote-color);
-  background-color: var(--alert-quote-background);
+  border-color: var(--alert-cite-color);
+  background-color: var(--alert-cite-background);
   .alert-title {
-    color: var(--alert-quote-color);
+    color: var(--alert-cite-color);
+  }
+}
+
+.alert.alert-quote {
+  border-color: var(--alert-warning-color);
+  background-color: var(--alert-warning-background);
+  .alert-title {
+    color: var(--alert-warning-color);
   }
 }
 
